@@ -1,14 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-<h1>HI</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Simple Tension & Torque Calculator</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
 
+        <a href="https://mitodocode.github .io/MitoWebsiteOfficial/">
+            <h1>Physics Tension & Torque Calculator</h1>
+        </a>
 
-</body>
+        <h3>A simple calculator for physics 1,made by "Pleiades" group of BSMCS
+            2B</h3>
+
+        <div class="container">
+
+            <div class="box">
+                <label for="scenario">Choose a scenario:</label>
+                <select id="scenario">
+                    <option value="single">Single Hanging Mass</option>
+                    <option value="pulley">Two Masses on a Pulley</option>
+                    <option value="incline">Inclined Plane</option>
+                    <option value="torque">Torque Calculation</option>
+                </select>
+
+                <div id="inputs">
+
+                </div>
+
+                <button onclick="calculate()">Calculate</button>
+
+                <div class="result" id="result">Result will appear here</div>
+            </div>
+
+            <div class="box">
+                <h3>Calculation Steps</h3>
+                <div class="steps" id="steps">
+                    Choose a scenario and enter values to see the step-by-step
+                    solution.
+                </div>
+            </div>
+        </div>
+
+        <script src="index.js">
+</script>
+
+    </body>
 </html>
